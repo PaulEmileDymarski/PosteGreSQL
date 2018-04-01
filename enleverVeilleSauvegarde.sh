@@ -1,6 +1,3 @@
 #!/bin/bash
 
-mysql
-
-
-find /SaveFolder/* -type f -mtime +7 -exec /bin/rm -f {} \;
+find /home/SaveFolder -type f -mtime +7 -exec /bin/rm -f {} \;
