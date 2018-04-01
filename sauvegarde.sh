@@ -1,3 +1,11 @@
-#!/bin/bash 
+#!/bin/bash
 
-mysqldump -u appli_web -p appli_web | gzip -c > output.gz 
+if [ ! -d "/SaveFolder" ] ;then
+mkdir /SaveFolder
+fi
+
+echo "Entrez le nom de la sauvegarde (sans l'extention)"
+read FileName
+echo "Entrez le nom de la base de donnée à sauvegarder"
+read DBAname
+mysqldump -u appli_web -p $DBAname | gzip -c > /SaveFolder/$FileName.gz 

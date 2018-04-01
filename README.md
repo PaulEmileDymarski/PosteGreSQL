@@ -7,7 +7,5 @@ Paramètre pour la base de donnée :
 - password : appli_web
 - dataBaseName : appli_web
 
-Utilisation des scripts :
-- le script sauvegarde la base : "appli_web" dans un fichier compressé directement ou l'on a lancé le script
-- le script restauration : lancez le après avoir extrait la sauvegarde contenue dans le fichier compressé,
-en étant toujours dans le même dossier"
+Le scrit sauvegarde créera directement un dossier "/SaveFolder".
+C'est dans ce dossier que toutes les sauvegardes seront stocker.
